@@ -4,10 +4,16 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "vite --jsx-factory=h"
+    "dev": "vite",
+    "build": "vite build",
+    "jsx": "vite --jsx-factory=h"
   },
   "dependencies": {
     "preact": "^10.4.1",
-    "vite": "^0.13.2"
+    "vue": "^3.0.0-beta.9"
+  },
+  "devDependencies": {
+    "vite": "^0.13.2",
+    "@vue/compiler-sfc": "^3.0.0-beta.9"
   }
 }

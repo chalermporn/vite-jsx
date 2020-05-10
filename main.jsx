@@ -1,4 +1,5 @@
 import { h, render, Component } from 'preact';
+import Hi from './hi.jsx';
 
 class App extends Component {
   // Add `name` to the initial state
@@ -20,6 +21,7 @@ class App extends Component {
     return (
       <div>
         <h1>Hello, {this.state.name}!</h1>
+        <Hi/>
         <form onSubmit={this.onSubmit}>
           <input type="text" value={this.state.value} onInput={this.onInput} />
           <button type="submit">Update</button>
